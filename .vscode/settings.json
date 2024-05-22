@@ -10,8 +10,4 @@
   },
   "css.validate": false,
   "tailwindCSS.emmetCompletions": true,
-  "liveServer.settings.port": "4000",
-  "liveServer.settings.host": "localhost",
-  "liveServer.settings.root": "/src",
-  "liveServer.settings.CustomBrowser": "chrome"
 }
