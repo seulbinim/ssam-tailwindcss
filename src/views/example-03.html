@@ -7,8 +7,8 @@
   <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet">
 </head>
-<body class="">
-  <div class>
+<body>
+  <div class="px-5">
     <h1 class="w-[230px] mx-auto mt-[70px] lg:mt-[100px]">
       <a href="/" class="logo-link">
         <picture>
@@ -17,6 +17,27 @@
         </picture>
       </a>
     </h1>
+
+    <!-- #03cf5d, #e9f0fd -->
+    <form action="/" class="mt-11 lg:mt-12 space-y-3">
+      <!-- 아이디 입력서식 -->
+      <div class="">
+        <label for="userEmail" class="sr-only">아이디</label>
+        <input class="px-3 border border-solid border-silverDark w-full h-11 bg-white focus:border-naverGreen focus:bg-gray" type="text" id="userEmail" name="userEmail" required placeholder="아이디"/>
+      </div>
+      <div class="">
+        <label for="userPw" class="sr-only">비밀번호</label>
+        <input class="px-3 border border-solid border-silverDark w-full h-11 bg-white focus:border-naverGreen focus:bg-gray" type="password" id="userPw" name="userPw" required placeholder="비밀번호"/>
+      </div>
+
+       <!-- 체크박스 컴포넌트 -->
+      <div class="">
+        <input type="checkbox" id="saveLogin" name="saveLogin" class="peer checkbox appearance-none" checked />
+        <label for="saveLogin" class="peer-checked:bg-[url('/assets/icons/checked.svg')] bg-yellow-200 pl-7 bg-no-repeat inline-block h-6 bg-[url('/assets/icons/unchecked.svg')]">로그인 상태 유지</label>
+      </div>
+
+    </form>
+
   </div>
 
 

@@ -16,6 +16,7 @@ module.exports = {
         "naverGreen": "#03cf5d",
         "white": "#ffffff",
         "sliver": "#999999",
+        "gray": "#e9f0fd",
         "sliverLight": "#dadada",
         "warningRed": "#ff1414",
         "silverDark": "#666666",
@@ -25,7 +26,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
   ]
 }
