@@ -8,21 +8,34 @@
   <link href="/css/style.css" rel="stylesheet">
 </head>
 <body class="font-suit m-5 flex flex-col gap-5">
-  <div class="">
-    <figure class="">
-      <img class="" src="/assets/faces/face1.jpg" alt="" />
-      <figcaption class=""><span class="sr-only">온라인</span></figcaption>
+  <!-- 플렉스(row) / 갭 32px -->
+  <div class="flex flex-row gap-8">
+    <!-- 상태를 나타내는 absolute의 기준 컨테이너 / 가로, 세로 80px -->
+    <figure class="relative w-20 h-20">
+      <!-- 라운딩 처리 -->
+      <img class="rounded-full" src="/assets/faces/face1.jpg" alt="" />
+      <!-- 기준 컨테이니에서 오른쪽 하단 배치 / 라운딩 처리 / 가로, 세로 24px  -->
+      <!-- 가장 바깥쪽 테두리는 그림자 효과로 지정 shadow-[0_0_0_2px_rgb(255,255,255)] -->
+      <!-- 배경 색상은 primary  -->
+      <figcaption class="shadow-[0_0_0_2px_rgb(255,255,255)] absolute right-0 bottom-0 rounded-full w-6 h-6 bg-primary"><span class="sr-only">온라인</span></figcaption>
     </figure>
-    <figure class="">
-      <img class="" src="/assets/faces/face1.jpg" alt="" />
-      <figcaption class=""><span class="sr-only">오프라인</span></figcaption>
+    <figure class="relative w-20 h-20">
+      <img class="rounded-full" src="/assets/faces/face1.jpg" alt="" />
+      <!-- 테두리는 8px / 테두리 색상 gray-40 / 배경 색상 gray-10 -->
+      <figcaption class="border-4 border-gray-40 shadow-[0_0_0_2px_rgb(255,255,255)] absolute right-0 bottom-0 rounded-full w-6 h-6 bg-gray-10"><span class="sr-only">오프라인</span></figcaption>
     </figure>
   </div>
   <hr />
-  <div class="">
+  <!-- 플렉스(row) / X 축으로 아이템이 겹치도록 설정(space-*) -->
+  <div class="hidden">
+    <!-- 기준 컨테이너 / 가로, 세로 80px -->
     <figure class="">
-      <a href="/" class=""
-        ><img class="" src="/assets/faces/face1.jpg" alt=""
+      <!-- 그룹으로 지정 (!중요 포인트) / 기본 아웃라인 제거-->
+      <a href="/" class="">
+        <!-- z-index 조절을 위한 relative 선언 -->
+        <!-- 라운딩 처리 테두리 선 1px / 테두리 선 색상 gray-20 -->
+        <!-- hover나 focus 시 group-*를 활용하여 테두리 선 두께 및 색상 변경 (primary) -->
+        <img class="" src="/assets/faces/face1.jpg" alt=""
       /></a>
     </figure>
     <figure class=" ">
