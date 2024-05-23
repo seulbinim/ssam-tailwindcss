@@ -30,25 +30,21 @@
       </div>
       <div class="order-1 flex flex-row justify-between">
         <div class="relative">
-          <input class="peer absolute w-6 h-6 appearance-none outline-none focus:ring-2 focus:ring-primary rounded-sm" type="checkbox" id="saveLogin" name="saveLogin" />
-          <label for="saveLogin" class="peer-checked:bg-[url('/assets/icons/checked.svg')] inline-block h-6 bg-[url('/assets/icons/unchecked.svg')] bg-no-repeat pl-7">로그인 상태 유지</label>
+          <input class="peer euid-checkbox euid-focus" type="checkbox" id="saveLogin" name="saveLogin" />
+          <label for="saveLogin" class="euid-checkbox-label">로그인 상태 유지</label>
         </div>
   
         <div class="flex flex-row gap-2">
-          <a href="/" class="outline-none focus:ring-2 focus:ring-primary rounded-sm" target="_blank" rel="noopener noreferrer">IP 보안</a>
+          <a href="/" class="euid-focus" target="_blank" rel="noopener noreferrer">IP 보안</a>
     
-          <!-- 스위치(텍스트) 컴포넌트 -->
-          <!-- input 요소를 absolute로 배치하기 위한 기준 컨테이너로 지정 / ON,OFF 글자 길이에 따라 상자 크기가 변하지 않도록 가로 크기를 32px로 지정 -->
           <div class="relative">
-            <!-- 레이블의 형제 요소로 처리하기 위해 peer 클래스 추가 필요 / 기본 스타일 제거 / 절대위치 배치 / 가로, 세로 크기는 부모 크기와 동일하게 지정 / 폼 플러그인 사용 시 글자색, 테두리색, 배경색을 투명으로 지정해야 함. checked 상태에서 제공되는 플러그인 이미지도 제거하기 위해 checked:bg-none 필요함. -->
-            <input type="checkbox" id="ipSecurity" name="ipSecurity" class="peer outline-none focus:ring-2 focus:ring-primary rounded-sm absolute w-full h-full appearance-none" />
-            <!-- 글자 굵기 bold / after 가상요소 선택자로 'OFF' 정보 제공 / 형제 요소인 peer 클래스가 지정된 input 요소가 chedked 상태가 되면 after 가상요소 선택자로 추가한 텍스트를 'ON'으로 변경하고 글자색상은 primary로 지정  -->
-            <label for="ipSecurity" class="w-8 block text-gray-20 peer-checked:text-primary font-bold after:content-['OFF'] peer-checked:after:content-['ON']"><span class="sr-only">IP 보안</span></label>
+            <input type="checkbox" id="ipSecurity" name="ipSecurity" class="peer euid-focus euid-switch" />
+            <label for="ipSecurity" class="euid-switch-label"><span class="sr-only">IP 보안</span></label>
           </div>
         </div>
       </div>
 
-      <button type="button" class="w-full h-11 bg-primary text-white rounded-sm focus:ring-2 focus:ring-warning outline-none">로그인</button>
+      <button type="button" class="euid-button euid-focus">로그인</button>
     </form>
   </div>
 </body>
