@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
-.box{
-  
+@layer components {
+  .euid-input {
+    @apply peer text-sm px-3 py-1 w-full border border-gray-20 h-11 bg-white rounded-sm outline-none focus:border-primary focus:bg-blue-10;
+  }
 }
+@tailwind utilities;
